@@ -1,0 +1,21 @@
+<html>
+<head><title>CertMe</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<form id="uploadForm" enctype="multipart/form-data" action="/api/upload" method="post">
+	 <div class="form-group">
+		<label for 'uploadInput'>Certificado</label>
+		<input type="file" name="upload" id='uploadInput'/> <br>
+	</div>
+	<div class="form-group">
+		<label for 'hashInput'>ID Aluno</label>
+		<input type="text" name="hash" id='hashInput'/> <br>
+	</div>
+	<div class="form-group">
+		<input type="submit" value="Cert me!" name="submit">
+	</div>
+</form>
+</body>
+</html>
